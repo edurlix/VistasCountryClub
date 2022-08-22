@@ -1,0 +1,805 @@
+/* Universal */
+
+html{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4em;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header and Banner */
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+    font-weight: bold;
+    letter-spacing: 2;
+}
+
+.header{
+    background-image: url(images/WEB_Cover2_TEXTLESS.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 23rem;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 21rem;
+    height: 21rem;
+}
+
+.banner .content{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center ;
+}
+
+.banner h1{
+    font-size: 3rem;
+    font-weight: 50;
+}
+
+.button{
+    border: 1px solid white;
+    padding: 10px;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 900px){
+    .header{
+        width: 100%;
+    }
+
+    .nav-list li{
+        font-size: 0.8rem;
+    }
+
+    .banner h1{
+        font-size: 2rem;
+    }
+
+    .button{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+    .header{
+        width: 100%;
+        height: 25rem;
+
+    }
+
+    .banner{
+        margin-top: 10rem;
+    }
+
+
+    .nav-list li{
+        font-size: 0.7rem;
+    }
+
+    .banner h1{
+        font-size: 2rem;
+    }
+
+    .button{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+    .header{
+        width: 100%;
+        padding-bottom: 20rem;
+    }
+
+    .nav{
+        flex-direction: column;
+    }
+
+    .nav-list li{
+        font-size: 0.6rem;
+    }
+
+    .banner h1{
+        font-size: 2rem;
+    }
+
+    .button{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .header{
+        width: 100%;
+        height: 30rem;
+    }
+
+
+    .banner{
+        margin-top: 7rem;
+    }
+
+    .nav{
+        flex-direction: column;
+    }
+
+    .nav-list li{
+        font-size: 0.55rem;
+    }
+
+    .nav ul{
+        position: relative;
+        right: 10px;
+    }
+
+    .banner h1{
+        font-size: 1.5rem;
+    }
+
+    .button{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .header{
+        width: 100%;
+        padding-bottom: 12rem;
+
+    }
+
+    .nav{
+        flex-direction: column;
+    }
+
+    .nav-list li{
+        font-size: 0.40rem;
+    }
+
+    .nav ul{
+        position: relative;
+        right: 10px;
+    }
+
+    .banner h1{
+        font-size: 1rem;
+    }
+
+    .button{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .header{
+        width: 100%;
+        padding-bottom: 15rem;
+
+    }
+
+    .nav{
+        flex-direction: column;
+    }
+
+    .nav-list li{
+        font-size: 0.5rem;
+    }
+
+    .nav ul{
+        position: relative;
+        flex-direction: column;
+        right: 10px;
+    }
+
+    .banner h1{
+        font-size: 1rem;
+    }
+
+    .button{
+        font-size: 1rem;
+    }
+
+}
+/* Detail */
+
+.detail{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url(images/WEB_Lakes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    padding-bottom: 46rem;
+    width: 100%;
+}
+
+.detail .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 25rem;
+}
+
+.detail p{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 900px) {
+   
+    .detail{
+        width: 100%;
+        height: 20rem;
+    }
+
+    .detail p{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+   
+    .detail{
+        width: 100%;
+        padding-bottom: 30rem;
+    }
+
+    .detail p{
+        font-size: 1.5rem;
+    }
+
+    .detail .content{
+        position: relative;
+        top: 15rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+   
+    .detail{
+        width: 100%;
+        padding-bottom: 25rem;
+    }
+
+    .detail p{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .detail .content{
+        position: relative;
+        top: 12rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+   
+    .detail{
+        width: 100%;
+    }
+
+    .detail p{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .detail .content{
+        position: relative;
+        top: 12rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+   
+    .detail{
+        width: 100%;
+        padding-bottom: 19rem;
+    }
+
+    .detail p{
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+    .detail .content{
+        position: relative;
+        top: 10rem;
+    }
+}
+
+/* Membership */
+
+.member{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #050938;
+    color: white;
+    width: 100%;
+    height: 85rem;
+}
+
+.member .content{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+}
+
+.member .content h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 18rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.type-membership{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    justify-items: center;
+    height: 100%;
+}
+
+.type-content{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    width: 40%;
+}
+
+.type-image{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.type-image img{
+    width: 100%;
+
+}
+
+.description{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.description h2{
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-size: 1.5rem;
+}
+
+.description p{
+    font-size: 1.5rem;
+}
+
+.description div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 900px){
+    .member{
+        width: 100%;
+    }
+
+    .member .content{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+    .member{
+        width: 100%;
+        height: 80rem;
+    }
+
+    .member .content{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+    .member{
+        width: 100%;
+        height: 70rem;
+    }
+
+    .member .content{
+        width: 80%;
+    }
+
+    .member .content h1{
+        font-size: 2rem;
+    }
+    
+    .description p{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .member{
+        width: 100%;
+        height: 70rem;
+    }
+
+    .member .content{
+        width: 80%;
+    }
+    
+    .description p{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .member{
+        width: 100%;
+        height: 90rem;
+    }
+
+    .member .content{
+        width: 80%;
+    }
+
+    .member .content h1{
+        margin-top: 6rem;
+    }
+
+    .type-membership{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+    }
+
+    .description{
+        width: 100%;
+    }
+    
+    .description p{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .member{
+        width: 100%;
+        height: 90rem;
+    }
+
+    .member .content{
+        width: 80%;
+    }
+
+    .member .content h1{
+        margin-top: 6rem;
+    }
+
+    .type-membership{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 75%;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .description div{
+        margin-top: -3rem;
+    }
+    
+    .description p{
+        font-size: 1rem;
+    }
+
+}
+
+
+/* Luxury */
+
+.luxury{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url(images/09.17.20_GreenLizard+copy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60rem;
+    color: white;
+}
+
+.luxury .content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+
+.luxury h1{
+    text-align: center;
+    margin-bottom: 10rem;
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+.luxury .include{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.include ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+   
+    .luxury{
+        width: 100%;
+    }
+
+    .luxury li{
+        font-size: 2rem;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+   
+    .luxury{
+        width: 100%;
+    }
+
+    .luxury li{
+        font-size: 1.5rem;
+    }
+
+    .luxury .content{
+        position: relative;
+        top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+   
+    .luxury{
+        width: 100%;
+        height: 50rem;
+    }
+
+    .luxury li{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .luxury .content{
+        position: relative;
+        top: 1rem;
+    }
+
+    .luxury h1{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+   
+    .luxury{
+        width: 100%;
+    }
+
+    .luxury a{
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+
+    .luxury h1{
+        font-size: 2rem;
+    }
+
+    .include p{
+        font-size: 1rem;
+    }
+
+    .include{
+        margin-top: -4rem;
+    }
+
+    .luxury .content{
+        position: relative;
+        top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+   
+    .luxury{
+        width: 100%;
+        height: 40rem;
+    }
+
+    .luxury li{
+        font-size: 0.88rem;
+        font-weight: 600;
+    }
+
+    .luxury .content{
+        position: relative;
+        top: 0.3rem;
+    }
+}
+
+
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30rem;
+    color: black;
+}
+
+footer .content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+    width: 25%;
+    height: 100%;
+    line-height: 2;
+}
+
+
+footer .content h1{
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+footer .content a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-right: 2rem;
+    color: black;
+}
+
+footer .content p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer img{
+    width: 46px;
+    height: 46px;
+}
+
+@media only screen and (max-width: 900px){
+    footer{
+        width: 100%;
+    }
+
+    footer .content{
+        width: 80%;
+    }
+
+    footer .content h1{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    footer{
+        width: 100%;
+        height: 15rem;
+    }
+
+    footer .content{
+        width: 80%;
+    }
+
+    footer .content h1{
+        font-size: 2rem;
+    }
+
+    footer .content p{
+        font-size: 1rem;
+    }
+
+    footer .content a{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    footer{
+        width: 100%;
+        height: 15rem;
+    }
+
+    footer .content{
+        width: 80%;
+    }
+
+    footer .content h1{
+        font-size: 1.5rem;
+    }
+
+    footer .content p{
+        font-size: 0.80rem;
+    }
+
+    footer .content a{
+        font-size: 0.80rem;
+    }
+}
